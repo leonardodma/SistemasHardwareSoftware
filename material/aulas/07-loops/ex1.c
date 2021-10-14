@@ -9,6 +9,19 @@ int soma_2n(unsigned int n) {
     return count_bin_digits;
 }
 
+// int soma_2n(unsigned int edi)
+// {
+//     int eax = 1;
+
+//     while (edi > 1)
+//     {
+//         edi /= 2;
+//         eax ++;
+//     }
+    
+//     return eax;
+// }
+
 int main() {
     printf("soma_2n(10): %d\n", soma_2n(10));
     return 0;
