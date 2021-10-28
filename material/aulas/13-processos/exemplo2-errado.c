@@ -2,17 +2,22 @@
 #include <unistd.h>
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int rodando = 1;
     pid_t filho;
 
     filho = fork();
 
-    if (filho == 0) {
+    if (filho == 0)
+    {
         printf("Acabei filho\n");
         rodando = 0;
-    } else {
-        while (rodando) {
+    }
+    else
+    {
+        while (rodando)
+        {
             printf("Esperando o filho acabar!\n");
             sleep(1);
         }
